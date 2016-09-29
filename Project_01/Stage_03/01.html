@@ -1,74 +1,138 @@
 <!doctype html>
-<!how to use span?>
+<!-- padding
+border
+margin
+float
+position
+top, right, bottom, left
+height
+background-color -->
+
 
 	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-<html lang="en">
-<head>
+  <html lang="en">
+  <head>
 
   <title>
-   03-01
+   03-01 Text
   </title>
-  <style>
+    <style>
 
-  .linespace {
-  	height: 10px;
-  
-  }
-  .indentation{
-  	width: 10px
-  }
+      body {
+      font-family: 'Libre Franklin', sans-serif;
+      background-color: #c3c3c3;
+      }
 
-  body {
-	font-family: 'Libre Franklin', sans-serif;
-  }
+      .font100{
+      font-weight: 100;
+      font-style:italic;
+      text-transform: uppercase;
+      }
 
-  h3{
-  	width: 800px;
-  }
-  h4{
-  	width: 600px;
-  }
+      .linespace {
+  	   height: 10px;
+      }
 
-  li {
-  	width: 800px;
-  }
-  h1{
-  	width: 800px
-  }
+      .spanindent{
+        margin-left: 60px;
+      }
+
+      .headline{
+       	position: relative;
+       	border: 2px solid #909090
+       }
+
+      .box{
+        width: 300px;
+        height: 50px;
+        background-color: #4c4c4c;
+        padding: 10px;
+        float: left;
+        margin-left:50px; 
+       }
+
+       .box2{
+       	margin-left: 390px;
+       	padding: 23px;
+       	width: 486px;
+       	height: 55px;
+       	background-color: #777;
+       }
+
+       .box3{
+       	margin-left: 48px;
+       	padding: 20px;
+       	width: 300px;
+       	height: 80px;
+       	background-color: #aaa;
+       }
+
+       .box4{
+       	position: absolute;
+       	top: 298px;
+       	margin-left: 500px;
+       	padding: 19px;
+       	width: 384px;
+       	height: 80px;
+       	background-color: #a1a1a1
+       }
+
+       .box5{
+       	margin-left: 48px;
+       	position: absolute;
+       	top: 460px;
+       	width: 560px;
+       	height: 20px;
+       	padding: 15px;
+       	background-color: #f6f6f6
+
+
+       }
+
+      h1{
+        margin-left: 50px;
+        position: right;
+        width: 800px
+      }
+      
+      h2{
+        margin-left: 50px;
+      }
+
     /* start your style code here (if allowed) */
 
-  </style>
+    </style>
 </head>
 
 <body>
-background-color
-<h1>&nbsp&nbsp&nbsp&nbspThe New Typography</h1> 
-<h2>&nbsp&nbsp&nbsp&nbsp&nbsp[1923] - Laszlo Moholy-Nagy</h2>
-<div class="linespace"></div>	
-<h4><div class="indentation"></div>Typography is a tool of <em>communication</em>.</h4> 
+
+<div class="headline"> <h1>The New Typography</h1> </div>
+<h2>[1923] - Laszlo Moholy-Nagy</h2>
+<div class="linespace"></div>
+
+<div class="box">
+Typography is a tool of <em>communication</em>.</div>
 	
-<ol>
-<li>It must be communication in its most <strong>intense</strong> form.</li>
+<div class="box2">
+It must be communication in its most <strong>intense</strong> form. The emphasis must be on <strong>absolute clarity</strong> since this distinguishes the character of our own writing from that of ancient <em>pictographic forms</em>.</div>
+
 <p></p>
-<li>The emphasis must be on <strong>absolute clarity</strong> since this distinguishes the character of our own writing from that of ancient <em>pictographic forms</em>.</li>
-</ol>
+
+<div class="linespace"></div>
+<div class="box3">Our intellectual relationship to the world is <strong>individual-exact</strong> (e.g., this individual-exact relationship is in a state of transition toward a <em>collective-exact orientation</em>).</div>
+
+<div class="box4">This is in <span class="font100"> contrast</span> to the ancient <strong>individual&nbsp-&nbspamorphous</strong> and later <strong>collective&nbsp- amorphous</strong> mode of communication.
+Therefore priority: unequivocal clarity in all typographical compositions.</div>
 
 
 <div class="linespace"></div>
-<h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspOur intellectual relationship to the world is <strong>individual-exact</strong> (e.g., this individual-exact relationship is in a state of transition toward a <em>collective-exact orientation</em>).</h4>
+<div class="box5">Legibility-communication must never be impaired by an a priori aesthetics.</div>
 
-
-<ol>
-
-<li>This is in contrast to the ancient <strong>individual&nbsp-&nbspamorphous</strong> and later <strong>collective&nbsp- amorphous</strong> mode of communication.</li>
-<p></p>
-<li>Therefore priority: unequivocal clarity in all typographical compositions.</li>
-</ol>
-
-<div class="linespace"></div>
-<h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLegibility-communication must never be impaired by an a priori aesthetics.</h4>
-
+<div class="nav">
+  <a href="../index.html">&laquo; previous</a> 
+  <a href="02.html">next &raquo;</a>
+  
 </body>
 </html>
 
