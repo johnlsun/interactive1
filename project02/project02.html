@@ -1,6 +1,6 @@
 <!doctype html>
 	<html>
-	<link href="https://fonts.googleapis.com/css?family=Francois+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 
 	<html lang="en">
 		<head>
@@ -9,64 +9,68 @@
     		<style>
 
     			body{
-				background-color: #A69ECE;
+				background-color: #92D8EE;
       			}
 
 				.headline{
-				font-family: 'Francois One';
-				font-style: italic;
-				font-weight: 400;
-				font-size: 60px;
-				text-shadow: -1px -1px #402A16;
+				font-family: 'Bungee Inline';
+				font-weight: 300;
+				font-size: 130px;
+				text-shadow: 5px 4px #F79E88;
 				text-align: center;
 				text-transform: capitalize;
 				padding-top: 20px;
 				width: 100%;
-				top: 69px;
+				top: 150px;
 				left: 251px;
 				height: 90px;
 				color: white;
 				z-index: 2;
 				}
 
-
 				.container{
-				position: relative;
 				padding: 12px 12px 12px 12px;
-				width: 900px;
+				border-radius: 15px;
+				position: relative; 
+				width: 650px;
 				height: 500px;	
 				margin: auto;
-				top: 150px;
+				top: 330px;
+				background-color: #F79E88;
+				}
+
+				.container2{
+				padding: 12px 12px 12px 12px;
+				border-radius: 15px;
+				position: relative; 
+				width: 615px;
+				height: 472px;	
+				margin: auto;
+				top: 3px;
 				background-color: #FDF59D;
 				}
 
-				.circle{
-				width: 315px;
-				height: 315px;
-				float: left;
-				position: relative;
-				margin-right: 25px;
-				border-radius: 50%;
-				background-color: #93CBEF;
-				font-family: 'Dancing Script';
-				text-align: center;
-				color: #7F532B;
-				z-index: 1;
+				.lefttriangle{
+				width: 0;
+				height: 0;
+				border-width: 75px 0px 75px 20px;
+				position: absolute;
+				transform: rotate(180deg);
+				left: 210px;
+				top: 635px;
+				border-style: solid;
+				border-color: transparent transparent transparent #F79E88;	
 				}
 
-				.circle2{
-				width: 315px;
-				height: 315px;
-				border: 25px;
-				float: left;
-				position: relative;
-				margin: auto;
-				border-radius: 50%;
-				background-color: #93CBEF;
-				font-family: 'Dancing Script';
-				text-align: center;
-				color: #7F532B;
-				z-index: 1;	
+				.righttriangle{
+				width: 0;
+				height: 0;
+				border-width: 75px 0 75px 20px;
+				position: absolute;
+				right: 210px;
+				top: 635px;
+				border-style: solid;
+				border-color: transparent transparent transparent #F79E88;
 				}
 
 			</style>
@@ -76,10 +80,13 @@
 
 			
   			<div class="headline">The Millennials</div>
+  			<div class="lefttriangle"></div>
+  			<div class="righttriangle"></div>
   			<div class="container">	
+  			<div class="container2">	
   				<div class="circle"> </div>
   				<div class="circle2"> </div>
   			</div>
-
+  			</div>
 			</body>
 	</html>
