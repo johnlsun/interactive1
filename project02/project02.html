@@ -1,5 +1,6 @@
 <!doctype html>
 	<html>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 
 	<html lang="en">
@@ -10,6 +11,7 @@
 
     			body{
 				background-color: #92D8EE;
+				overflow: hidden;
       			}
 
 				.headline{
@@ -20,73 +22,167 @@
 				text-align: center;
 				text-transform: capitalize;
 				padding-top: 20px;
-				width: 100%;
+				width: 1400px;
 				top: 150px;
 				left: 251px;
-				height: 90px;
 				color: white;
 				z-index: 2;
 				}
 
-				.container{
-				padding: 12px 12px 12px 12px;
-				border-radius: 15px;
-				position: relative; 
-				width: 650px;
-				height: 500px;	
-				margin: auto;
-				top: 330px;
-				background-color: #F79E88;
+				.character{
+				background-image: url('snapchat-04.png');
+				background-size: contain;
+				position: relative;
+				top: -1172px;
+				margin-left: 250px;
+				width: 200px;
+				height: 200px;
 				}
 
-				.container2{
+				.wrapper {
+				width: 1300px;
+				margin: 0 auto;
+				height: 524px;
+				overflow: hidden;
+				position: relative;
+				}
+
+				#container{
 				padding: 12px 12px 12px 12px;
 				border-radius: 15px;
-				position: relative; 
-				width: 615px;
-				height: 472px;	
+				width: 4000px;
+				overflow: auto;	
 				margin: auto;
-				top: 3px;
 				background-color: #FDF59D;
+				position: relative;
+				}
+				
+				.box {
+				float: left;
+				width: 800px;
+				height: 500px;
+    			}
+
+				.b1{
+				background-image: url('filler-02.png');
+				background-size: contain;
+				background-color: #AFB7FF;
 				}
 
-				.lefttriangle{
-				width: 0;
-				height: 0;
-				border-width: 75px 0px 75px 20px;
-				position: absolute;
-				transform: rotate(180deg);
-				left: 210px;
-				top: 635px;
-				border-style: solid;
-				border-color: transparent transparent transparent #F79E88;	
+				.b2{
+				background-color: #A5E8C4;
 				}
 
-				.righttriangle{
-				width: 0;
-				height: 0;
-				border-width: 75px 0 75px 20px;
-				position: absolute;
-				right: 210px;
-				top: 635px;
-				border-style: solid;
-				border-color: transparent transparent transparent #F79E88;
+				.b3{
+				background-color: #FFDDC3;
+				}
+
+				.b4{
+				background-color: #FFBF7F;	
+				}
+
+				.scene1 {
+					animation: sc1 2s forwards;
+				}
+
+				.scene2 {
+					animation: sc2 2s forwards;
+				}
+
+				.scene3 {
+					animation: sc3 2s forwards;
+				}
+
+				.scene4 {
+					animation: sc4 2s forwards;
+				}
+
+				@keyframes sc1 {
+					from {
+						left: -1000px;
+					}
+					to {
+						left: 0;
+					}
+				}
+
+				@keyframes sc2 {
+					from {
+						left: 0;
+					}
+					to {
+						left: -575px;
+					}
+				}
+
+				@keyframes sc3 {
+					from {
+						left: -600px;
+					}
+					to {
+						left: -1360px;
+					}
+
+				@keyframes sc4 {
+					from {
+						left: -1360px;
+					}
+					to {
+						left: -5060px;
+					}	
 				}
 
 			</style>
+
+
+		<script>
+			$(document).ready(function() {
+
+				$(".b1").click(function(){
+						
+					$("#container").removeClass();
+					$("#container").addClass('scene1');
+
+				});
+
+				$(".b2").click(function(){
+						
+					$("#container").removeClass();
+					$("#container").addClass('scene2');
+
+				});
+
+				$(".b3").click(function(){
+						
+					$("#container").removeClass();
+					$("#container").addClass('scene3');
+
+				});
+				
+				$(".b4").click(function(){
+						
+					$("#container").removeClass();
+					$("#container").addClass('scene4');
+
+				});
+			});
+		</script>
+
 		</head>
 
 			<body>
 
 			
-  			<div class="headline">The Millennials</div>
-  			<div class="lefttriangle"></div>
-  			<div class="righttriangle"></div>
-  			<div class="container">	
-  			<div class="container2">	
-  				<div class="circle"> </div>
-  				<div class="circle2"> </div>
-  			</div>
-  			</div>
+				<div class="headline">The Millennials</div>
+				
+				<div class="wrapper">
+					<div id="container">
+						<div class="box b1"></div>
+						<div class="box b2"></div>
+						<div class="box b3"></div>
+						<div class="box b4"></div>
+					</div>	
+				</div>
+
 			</body>
 	</html>
