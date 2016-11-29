@@ -36,7 +36,7 @@
     top: 10px;
     }
 
-    .d1 {
+    .dow {
     float: left;
     margin: 5px;
     background-color: white;
@@ -69,11 +69,39 @@
 
     .hour-block {
     position: relative;
-    float: left;
     width: 105px;
     height: 60px;
     text-align: right;
-    border-bottom: 1px solid #000;	
+    border-bottom: 1px solid #000;
+    background-color: white;	
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .col2 {
+    	width: 50%;
+    	float: left;
+    	height: 60px;
+    	border: 1px solid white;
+    	box-sizing: border-box;
+    	overflow: hidden;
+    }
+
+    .col2  img {
+    	width: 100%;
+    }
+
+    .col3 {
+    	width: 33.333%;
+    	float: left;
+    	height: 60px;
+    	border: 1px solid red;
+    	box-sizing: border-box;
+    }
+
+    .col3  img {
+    	width: 100%;
     }
 
 
@@ -86,35 +114,35 @@
 	
 	<div class="container">
  		<div class="week"> 
- 			<div class="d1">
+ 			<div class="dow">
 			Time
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Sunday
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Monday
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Tuesday 	
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Wednesday	
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Thursday	
 			</div>	
 
-			<div class="d1">
+			<div class="dow">
 			Friday	
 			</div>
 
-			<div class="d1">
+			<div class="dow">
 			Saturday
 			</div>
 		</div>	
@@ -172,7 +200,8 @@
 				</div>
 				<div class="hour-block">
 					12 AM
-				</div>																										<div class="hour-block">
+				</div>																										 
+				<div class="hour-block">
 					1 AM
 				</div>
 				<div class="hour-block">
@@ -180,15 +209,174 @@
 				</div>				
 			</div>
 
-			<div class="whitebox"> <div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div><div class="hour-block"></div> </div>
-			<div class="whitebox"></div>
-			<div class="whitebox"></div>
-			<div class="whitebox"></div>
-			<div class="whitebox"></div>
-			<div class="whitebox"></div>
-			<div class="whitebox"></div>
-		</div>
-		
+			<div class="whitebox"> <!-- */Sunday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block"></div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"> <!-- 8PM -->
+					<div class="col2"><img src="assets/FullSizeRender_2.jpg" /></div> <!-- 8PM -->
+					<div class="col2"><img src="assets/FullSizeRender.jpg" /></div> <!-- 8PM -->
+				</div>
+				<div class="hour-block"> <!-- 9PM -->
+					<div class="col2"><img src="assets/FullSizeRender_2.jpg" /></div> <!-- 9PM -->
+				</div>
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+			
+			<div class="whitebox"> <!-- */Monday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block">
+					<div class="col2"><img src="assets/thumbnails/IMG_1285.jpg" /></div>
+				</div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"> <!-- 8PM -->
+					<div class="col2"><img src="assets/thumbnails/IMG_1285.jpg" /></div> <!-- 8PM -->
+				</div>
+				<div class="hour-block"> <!-- 9PM -->
+					<div class="col2"><img src="assets/thumbnails/IMG_1287.jpg" /></div> <!-- 9PM -->
+				</div>
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+			<div class="whitebox"> <!-- */Tuesday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block"></div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"></div> <!-- 8PM -->
+				<div class="hour-block"></div> <!-- 9PM -->
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+			<div class="whitebox"> <!-- */Wednesday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block"></div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"></div> <!-- 8PM -->
+				<div class="hour-block"></div> <!-- 9PM -->
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+			<div class="whitebox"> <!-- */Thursday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block"></div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"></div> <!-- 8PM -->
+				<div class="hour-block"></div> <!-- 9PM -->
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+			<div class="whitebox"> <!-- */Friday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block">
+					<div class="col2 img"><img src="assets/thumbnails/IMG_1431.jpg" /></div>
+				</div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"></div> <!-- 8PM -->
+				<div class="hour-block"></div> <!-- 9PM -->
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+			<div class="whitebox"> <!-- */Saturday/ -->
+				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block"></div> <!-- 9AM -->
+				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block"></div> <!-- 11AM -->
+				<div class="hour-block"></div> <!-- 12PM -->
+				<div class="hour-block"></div> <!-- 1PM -->
+				<div class="hour-block"></div> <!-- 2PM -->
+				<div class="hour-block"></div> <!-- 3PM -->
+				<div class="hour-block"></div> <!-- 4PM -->
+				<div class="hour-block"></div> <!-- 5PM -->
+				<div class="hour-block"></div> <!-- 6PM -->
+				<div class="hour-block"></div> <!-- 7PM -->
+				<div class="hour-block"></div> <!-- 8PM -->
+				<div class="hour-block"></div> <!-- 9PM -->
+				<div class="hour-block"></div> <!-- 10PM -->
+				<div class="hour-block"></div> <!-- 11PM -->
+				<div class="hour-block"></div> <!-- 12AM -->
+				<div class="hour-block"></div> <!-- 1AM -->
+				<div class="hour-block"></div> <!-- 2AM -->
+			</div>
+
+		</div>					
 	</div>
 	</body>
 
