@@ -54,15 +54,28 @@
     z-index: 5;
     }
 
-    .days {
+    .timeheader {
+    position: fixed;
+    margin: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 210px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 5px solid #000;
+    z-index: 3;	
+    }
+
+    .timebackground {
    	top: 50px;
-    position: relative;
-    width: 1763px;
+    position: fixed;
+    width: 223px;
     height: 2350px;
     background-color: #B2B2B2;
     }
 
-    .whitebox1 {
+    .timecolumn {
     position: absolute;
     float: left;
     margin: 5px;
@@ -71,6 +84,14 @@
     background-color: white;
     top: 5px;
     text-align: center;
+    }
+
+    .days {
+   	top: 50px;
+    position: relative;
+    width: 1763px;
+    height: 2350px;
+    background-color: #B2B2B2;
     }
 
     .whitebox {
@@ -143,43 +164,11 @@
  	<div class="topbar"></div>
 	
 	<div class="container">
- 		<div class="week"> 
- 			<div class="dow">
-			Time
-			</div>
 
-			<div class="dow">
-			Sunday
-			</div>
+		<div class="timeheader">Time</div>
 
-			<div class="dow">
-			Monday
-			</div>
-
-			<div class="dow">
-			Tuesday 	
-			</div>
-
-			<div class="dow">
-			Wednesday	
-			</div>
-
-			<div class="dow">
-			Thursday	
-			</div>	
-
-			<div class="dow">
-			Friday	
-			</div>
-
-			<div class="dow">
-			Saturday
-			</div>
-		</div>	
-	
-	
-		<div class="days">
-			<div class="whitebox1">
+				<div class="timebackground">
+			<div class="timecolumn">
 				<div class="hour-block">
 					8 AM
 				</div>
@@ -238,7 +227,42 @@
 					2 AM
 				</div>				
 			</div>
+		</div>	
 
+ 		<div class="week"> 
+			<div class="dow">
+			Sunday
+			</div>
+
+			<div class="dow">
+			Monday
+			</div>
+
+			<div class="dow">
+			Tuesday 	
+			</div>
+
+			<div class="dow">
+			Wednesday	
+			</div>
+
+			<div class="dow">
+			Thursday	
+			</div>	
+
+			<div class="dow">
+			Friday	
+			</div>
+
+			<div class="dow">
+			Saturday
+			</div>
+		</div>	
+	
+	
+
+
+		<div class=greybackground>
 			<div class="whitebox"> <!-- */Sunday/ -->
 				<div class="hour-block">
 					<div class="col2.img"><img src="assets/thumbnails/thumbimg_1276.jpg" /></div>
