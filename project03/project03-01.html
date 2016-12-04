@@ -32,11 +32,12 @@
   	}
 
     .week {
-    margin: auto;
-    width: 1763px;
+    margin-left: 230px;
+    float: left;
+    width: 1542px;
     height: 40px;
     background-color: #B2B2B2;
-    position: fixed;
+    position: relative;
     z-index: 1;
     top: 10px;
     }
@@ -54,9 +55,21 @@
     z-index: 5;
     }
 
+    .timeheaderbackground {
+    margin-left: 0px;
+    float: left;
+    width: 223px;
+    height: 40px;
+    background-color: #B2B2B2;
+    position: fixed;
+    z-index: 3;
+    top: 10px;
+    }
+
     .timeheader {
     position: fixed;
     margin: 5px;
+    top: 10px;
     background-color: white;
     color: black;
     text-align: center;
@@ -82,8 +95,9 @@
     width: 210px;
     height: 1158px;
     background-color: white;
-    top: 5px;
+    top: 45px;
     text-align: center;
+    z-index: 4;
     }
 
     .days {
@@ -165,9 +179,11 @@
 	
 	<div class="container">
 
+		<div class="timeheaderbackground">
 		<div class="timeheader">Time</div>
+		</div>
 
-				<div class="timebackground">
+		<div class="timebackground">
 			<div class="timecolumn">
 				<div class="hour-block">
 					8 AM
@@ -258,9 +274,6 @@
 			Saturday
 			</div>
 		</div>	
-	
-	
-
 
 		<div class=greybackground>
 			<div class="whitebox"> <!-- */Sunday/ -->
