@@ -37,7 +37,7 @@
     height: 40px;
     background-color: #B2B2B2;
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     top: 10px;
     }
 
@@ -94,7 +94,7 @@
     	overflow: hidden;
     }
 
-    .col2  img {
+    .col2 img {
     	width: 100%;
     	
 
@@ -112,6 +112,29 @@
     	width: 100%;
     }
 
+    .overlay {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    z-index: 4;
+	    top: 0;
+	}	
+	.t8am .overlay {
+	    background-color: rgba(255,0,0,0.3);
+	}
+	.t9am .overlay {
+	    background-color: rgba(0,255,0,0.3);;
+	}
+	.hour-block:hover .overlay {
+		display: none;
+	}
+
+	.play-icon{
+		position: absolute;
+		width: 50px;
+		left: 50px;
+		top: 25px;
+	}
 
   </style>
 
@@ -149,6 +172,7 @@
     });
 	});
   </script>
+
 </head>
 
 	<body>
@@ -254,10 +278,14 @@
 			</div>
 
 			<div class="whitebox"> <!-- */Sunday/ -->
-				<div class="hour-block">
-				  <a class="fancybox" rel="group" href="assets/photos/1113-0800.jpg" title="Sunday, 11/13/2016 8:00AM">
-				  <img src="assets/photos/thumbnails/1113-0800.jpg" alt="" /></a>
-				  <div class="col2.img"><img src="assets/photos/thumbnails/1113-0800.jpg" /></div>
+				<div class="hour-block t8am">
+				  <a class="fancybox" rel="group" 
+				  	href="assets/photos/1113-0800.jpg" 
+				  	title="Sunday, 11/13/2016 8:00AM"
+					>
+				  	<img src="assets/photos/thumbnails/1113-0800.jpg" alt="" />
+				  </a>
+				  <div class="overlay"></div>
 				</div> <!-- 8AM -->
 				<div class="hour-block"></div> <!-- 9AM -->
 				<div class="hour-block"></div> <!-- 10AM -->
@@ -266,7 +294,6 @@
 				<div class="hour-block">
 					<a class="fancybox" rel="group" href="assets/photos/1105-1300.jpg" title="Sunday, 11/05/2016 1:00PM">
 				  	<img src="assets/photos/thumbnails/1105-1300.jpg" alt="" /></a>
-					<div class="col2.img"><img src="assets/photos/thumbnails/1105-1300.jpg" /></div>
 				</div> <!-- 1PM -->
 				<div class="hour-block"></div> <!-- 2PM -->
 				<div class="hour-block"></div> <!-- 3PM -->
@@ -275,7 +302,6 @@
 				<div class="hour-block">
 					<a class="fancybox" rel="group" href="assets/photos/1120-2000.jpg" title="Sunday, 11/05/2016 1:00PM">
 				  	<img src="assets/photos/thumbnails/1120-2000.jpg" alt="" /></a>
-					<div class="col2.img"><img src="assets/photos/thumbnails/1120-2000.jpg" /></div>
 				</div> <!-- 6PM -->
 				<div class="hour-block">
 					<div class="col2.img"><img src="assets/photos/thumbnails/1120-1900.jpg" /></div>
@@ -298,8 +324,9 @@
 			</div>
 			
 			<div class="whitebox"> <!-- */Monday/ -->
-				<div class="hour-block">
+				<div class="hour-block t8am">
 					<div class="col2.img"><img src="assets/photos/thumbnails/1107-0800.jpg" /></div>
+					<div class="overlay"></div>
 				</div> <!-- 8AM -->
 				<div class="hour-block"></div> <!-- 9AM -->
 				<div class="hour-block"></div> <!-- 10AM -->
@@ -334,9 +361,19 @@
 			</div>
 
 			<div class="whitebox"> <!-- */Tuesday/ -->
-				<div class="hour-block"></div> <!-- 8AM -->
+				<div class="hour-block t8am">
+				  <div class="overlay"></div>
+				</div> <!-- 8AM -->
 				<div class="hour-block"></div> <!-- 9AM -->
-				<div class="hour-block"></div> <!-- 10AM -->
+				<div class="hour-block">
+					<a class="fancybox" rel="group" href="assets/movies/hillary.m4v" title="Tuesday, 11/09/2016 10:00AM">
+				  		<img src="assets/playbutton.png" alt>
+				  		<img src="assets/photos/thumbnails/1109-1000.jpg" alt class="">
+				  	</a>
+				  	<div class="col2.img">
+						<img src="assets/photos/thumbnails/1109-1000.jpg" />
+					</div>
+				</div> <!-- 10AM -->
 				<div class="hour-block"></div> <!-- 11AM -->
 				<div class="hour-block"></div> <!-- 12PM -->
 				<div class="hour-block">
@@ -377,14 +414,18 @@
 
 			<div class="whitebox"> <!-- */Wednesday/ -->
 				<div class="hour-block"></div> <!-- 8AM -->
-				<div class="hour-block">
+				<div class="hour-block t9am">
 					<div class="col2.img"><img src="assets/photos/thumbnails/1109-0900.jpg" /></div>
+					<div class="overlay"></div>
 				</div> <!-- 9AM -->
 				<div class="hour-block">
 					<a class="fancybox" rel="group" href="assets/movies/hillary.m4v" title="Tuesday, 11/09/2016 10:00AM">
-				  	<img src="assets/playbutton.png" alt="" /></a>
-				  	<img src="assets/photos/thumbnails/1109-1000.jpg" alt="" /></a>
-					<div class="col2.img"><img src="assets/photos/thumbnails/1109-1000.jpg" /></div>
+				  		<img src="assets/playbutton.png" alt class="play-icon">
+				  		<img src="assets/photos/thumbnails/1109-1000.jpg" alt class="">
+				  	</a>
+				  	<div class="col2.img">
+						<img src="assets/photos/thumbnails/1109-1000.jpg" />
+					</div>
 				</div> <!-- 10AM -->
 				<div class="hour-block"></div> <!-- 11AM -->
 				<div class="hour-block"></div> <!-- 12PM -->
