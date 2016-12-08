@@ -121,16 +121,39 @@
 	 $(".fancybox").fancybox({
 
 	 	nextEffect:'none',
-	 	prevEffect:'none'
-
+	 	prevEffect:'none',
+	 	autoSize: false
 	 });	
 
+	 $("#play-vid").click(function(){
+
+	 $(this).hide();	    	
+      $("#pause-vid").show();	
+      $("#hillary")[0].play();
+
+    });
+
+    $("#pause-vid").click(function(){
+
+	$(this).hide();	
+      $("#play-vid").show();	
+      $("#hillary")[0].pause();
+
+    });
+
+    $("#hillary").on('ended', function(){
+
+      $("#play-vid").show();	
+      $("#pause-vid").hide();
+
+    });
 	});
   </script>
 </head>
 
 	<body>
 	
+
  	<div class="topbar"></div>
 	
 	<div class="container">
@@ -232,7 +255,7 @@
 
 			<div class="whitebox"> <!-- */Sunday/ -->
 				<div class="hour-block">
-				  <a class="fancybox" rel="group" href="assets/photos/portrait/1113-0800.jpg" title="Sunday, 11/13/2016 8:00AM">
+				  <a class="fancybox" rel="group" href="assets/photos/1113-0800.jpg" title="Sunday, 11/13/2016 8:00AM">
 				  <img src="assets/photos/thumbnails/1113-0800.jpg" alt="" /></a>
 				  <div class="col2.img"><img src="assets/photos/thumbnails/1113-0800.jpg" /></div>
 				</div> <!-- 8AM -->
@@ -241,7 +264,7 @@
 				<div class="hour-block"></div> <!-- 11AM -->
 				<div class="hour-block"></div> <!-- 12PM -->
 				<div class="hour-block">
-				<a class="fancybox" rel="group" href="assets/photos/portrait/1105-1300.jpg" title="Sunday, 11/05/2016 1:00PM">
+					<a class="fancybox" rel="group" href="assets/photos/1105-1300.jpg" title="Sunday, 11/05/2016 1:00PM">
 				  	<img src="assets/photos/thumbnails/1105-1300.jpg" alt="" /></a>
 					<div class="col2.img"><img src="assets/photos/thumbnails/1105-1300.jpg" /></div>
 				</div> <!-- 1PM -->
@@ -250,6 +273,8 @@
 				<div class="hour-block"></div> <!-- 4PM -->
 				<div class="hour-block"></div> <!-- 5PM -->
 				<div class="hour-block">
+					<a class="fancybox" rel="group" href="assets/photos/1120-2000.jpg" title="Sunday, 11/05/2016 1:00PM">
+				  	<img src="assets/photos/thumbnails/1120-2000.jpg" alt="" /></a>
 					<div class="col2.img"><img src="assets/photos/thumbnails/1120-2000.jpg" /></div>
 				</div> <!-- 6PM -->
 				<div class="hour-block">
@@ -356,6 +381,9 @@
 					<div class="col2.img"><img src="assets/photos/thumbnails/1109-0900.jpg" /></div>
 				</div> <!-- 9AM -->
 				<div class="hour-block">
+					<a class="fancybox" rel="group" href="assets/movies/hillary.m4v" title="Tuesday, 11/09/2016 10:00AM">
+				  	<img src="assets/playbutton.png" alt="" /></a>
+				  	<img src="assets/photos/thumbnails/1109-1000.jpg" alt="" /></a>
 					<div class="col2.img"><img src="assets/photos/thumbnails/1109-1000.jpg" /></div>
 				</div> <!-- 10AM -->
 				<div class="hour-block"></div> <!-- 11AM -->
